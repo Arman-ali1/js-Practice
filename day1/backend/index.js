@@ -9,25 +9,11 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 
-
 const Register=require("./models/registers");
+const { name } = require('ejs');
 require("./db/conn");
-// const Register = require("./models/registers");
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3300;
 
-// const static_path = path.join(__dirname,"./public");
-// const template_path = path.join(__dirname,"./templates/views");
-// const partials_path = path.join(__dirname,"./templates/partials");
-//postman
-// app.use(express.json());
-// app.use(express.urlencoded({extended:false}));
-
-//this can be used for html files
-// app.use(express.static(static_path))
-// this can be used for hbs files (which renders hbs files)
-// app.set("view engine", "hbs");
-// app.set("views",template_path);
-// hbs.registerPartials(partials_path);
 app.set("view engine","ejs");
 
 app.get('/',(req,res)=>{
@@ -64,7 +50,21 @@ app.post("/register",async(req,res)=>{
         res.status(555).send(error);
     }
 });
-
+app.get("/login",(req,res)=>{
+    res.render("print");
+})
+// ============================login============
+app.post("/login", async (req, res) => {
+    const username=await Register.findOne({});
+    // console.log(username.name);
+    // const t=document.querySelector('p');
+    // t.innerHTML=username.name;
+    let namess="Arman";
+    // console.log(username.name);
+    namess=username.name;
+    res.render("print");
+  });
+// ============================end login========
 //login check
 app.listen(port,()=>{
     console.log(`server is running at port number ${port}`);
