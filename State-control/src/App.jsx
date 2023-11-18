@@ -8,8 +8,8 @@ function App() {
 
   return (
     <>
-      <div className="d-flex items-center">
-      <div className="text-3xl font-bold underline text-red-500">Arman Ali</div>
+      <div className="flex justify-center items-center flex-col ">
+      <div className="m-10 text-3xl font-bold underline text-red-500">Arman Ali</div>
       <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
           <a href="#">
               <img className="rounded-t-lg" src="/image-1.jpg" alt="" />
