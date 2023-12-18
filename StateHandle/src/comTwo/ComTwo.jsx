@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 // import ComThree from '../comThree/ComThree';
 
 
+
 function ComTwo() {
 
   const navigate=useNavigate();
@@ -39,7 +40,7 @@ async function submit(){
       <h1>Finding data from dtatbase</h1>
       <input onChange={(e)=>{
         setVal(e.target.value)
-      }} placeholder='input data' className='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded' ></input>
+      }} placeholder='Enter-Username' className='bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded' ></input>
       <button onClick={submit} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>get data</button>
     </div>
   )

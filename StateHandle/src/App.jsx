@@ -1,26 +1,34 @@
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import {store} from "../src/store/Store"
 import ComOne from './comOne/ComOne';
 import ComTwo from './comTwo/ComTwo';
 import ComThree from './comThree/ComThree';
+import { useNavigate } from 'react-router-dom';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const navigate=useNavigate();
+  const [count, setCount] = useState(store.count)
+
+function comone(){
+  navigate("/ComOne")
+}
+
 console.log(store);
   return (
     <>
+    
       <h1>Vite Application start</h1>
+
+      <br/>
+
       <h2>Count: {count}</h2>
-      {/* <ComOne/>
-      <h1>Current Store count value  {store.count}</h1>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <ComTwo/>
-      <p>Compoenet e start</p>
-      <ComThree/> */}
+
+      <br/>
+      <br/>
+      <br/>
+      
+      <button onClick={comone} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'> Go... ComOne--{`>`}</button>
+    
     </>
   )
 }

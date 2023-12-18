@@ -8,6 +8,8 @@ let store={
     count:0,
     flage:false
 }
-store.count+=1;
+// store.count+=1;
+
+
 console.log(store);
 export  {store} 
