@@ -3,11 +3,11 @@ import Child from "./Child";
 function Usecall(){
     const [count, setCount] = useState(0);
 
-  // Without useCallback
-//   const add = () => {
-//     // console.log('Button clicked!');
-//     setCount(count+1)
-//   };
+  Without useCallback
+  const add = () => {
+    // console.log('Button clicked!');
+    setCount(count+1)
+  };
 
   // With useCallback
   const add = useCallback(() => {
