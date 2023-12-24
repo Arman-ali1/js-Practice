@@ -4,14 +4,14 @@ function Usecall(){
     const [count, setCount] = useState(0);
 
   // Without useCallback
-  // const add = () => {
-  //   // console.log('Button clicked!');
-  //   setCount(count+1)
-  // };
+  const add2 = () => {
+    console.log('Button clicked!');
+    setCount(count+1)
+  };
 
   // With useCallback
   const add = useCallback(() => {
-    // console.log('Button clicked! Count:', count);
+    console.log('Button clicked! Count:', count);
     setCount(count+1)
   }, [count]);
 
@@ -20,7 +20,8 @@ function Usecall(){
       
       <p>Count: {count}</p>
       <button onClick={add}>Increment</button>
-      <Child/>
+      <button onClick={add2}>Increment2</button>
+      {/* <Child/> */}
     </div>
   );
 };
