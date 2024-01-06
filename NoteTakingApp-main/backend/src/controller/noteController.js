@@ -37,57 +37,95 @@ const allNotes = asyncHandler(async (req,res)=>{
 })
 
 const deleteNote = asyncHandler(async (req,res)=>{
-    const {idd} =req.body;
-        console.log("idddddddddd",idd);
-        try {
-            if(!idd){
-                return res.status(405).json({ error: 'Id not found' });
-            }
-            const note = await Note.deleteOne({_id:idd});
-            const dd=await Note.find();
-            console.log(dd);
-            if (!note) {
-                return res.status(404).json({ error: 'Note not found' });
-            }
-            res.json(note);
-            
-        } catch (error) {
-           
-            console.error('Error deleting note:', error);
-            res.status(500).json({ error: 'Internal server error' });
-        }
+    const id = req.body.id;
+    const note = await Note.findById(id);
+  if (!note) { 
+    return res.status(500).json({
+        success: failed,
+        message: "note not found",
+      });
+  }
+  await note.deleteOne();
+  res.status(200).json({
+    success: true,
+    message: "product deleted successfully",
+  });
 })
 
 const updateNote = asyncHandler(async (req,res)=>{
-    let note = await Note.findById(req.params.id);
-    
-    if (!note) {
-      return res.status(500).json({
-        success: failed,
-        message: "product not found",
-      });
+        const {id,noteTitle,contentText} = req.body
+        const _id=id
+    console.log(id);
+    console.log(noteTitle);
+    console.log(contentText);
+    // if(!updateField) {
+    //     return res.status(400).json({msg: 'Please enter all fields'})
+    // }
+    if(noteTitle){
+         await Note.findByIdAndUpdate(_id, {
+            $set: {
+                title: noteTitle
+            }
+        },
+        {
+            new: true
+        }
+        )
     }
-  
+    if(contentText){
+          await Note.findByIdAndUpdate(_id, {
+            $set: {
+                content: contentText
+            }
+        },
+        {
+            new: true
+        }
+        )
+
+    }
     
-    // if note found
-    note = await Note.findByIdAndUpdate(req.params.id, req.body, {
-      new: true,
-      runValidators: true,
-      useFindAndModify: false,
-    });
-  
-    //update status
-    res.status(200).json({
-      success: true,
-      message: "updated successfully",
-      note,
-    });
+    res.json(id)
   });  
 export {createNote,allNotes, deleteNote,updateNote}
 
 
 
+// app.post('/update-note', async(req, res) => {
+//     const {_id,updateField,flage} = req.body
+//     console.log(_id);
+//     console.log(updateField);
+//     console.log(flage);
+//     // if(!updateField) {
+//     //     return res.status(400).json({msg: 'Please enter all fields'})
+//     // }
+//     if(flage){
+//          await Note.findByIdAndUpdate(_id, {
+//             $set: {
+//                 title: updateField
+//             }
+//         },
+//         {
+//             new: true
+//         }
+//         )
+//     }
+//     else{
+//           await Note.findByIdAndUpdate(_id, {
+//             $set: {
+//                 content: updateField
+//             }
+//         },
+//         {
+//             new: true
+//         }
+//         )
 
+//     }
+    
+//     res.json(_id)
+// }
+// )
 
 
  
