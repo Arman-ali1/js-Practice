@@ -1,7 +1,10 @@
 import React from "react";
+import { useState } from "react";
 import deleteimg from "../../assets/delete.svg"
 import editimg from "../../assets/edit.svg"
 import axios from "axios";
+
+
 const notecss = {
   "boxSizing": " border-box",
   "minWidth": "300px",
@@ -22,43 +25,35 @@ const notecss = {
   "color": "black",
   "margin": "10px",
 };
-function Note({title ,content}) {
-  const detete = async()=>{
-    console.log("delete")
-    //send _id which comes from mongodb for every note at the time of save note
-    //defalt _id
-    // const _id="65983bc62dc45687750032e0" destructure the value of _id then pass _id
-    await axios.post("http://localhost:8000/api/v1/notes/deletenote",{_id})
-    .then(()=>{
-      console.log("data send for deletion successfully");
-    })
-    .catch((error)=>{
-      console.log("Error during calling api of delete note");
-    })
-    
-
-
+function Note({_id,title ,content}) {
+  const id = _id;
+  console.log("asdf",id);
+  const[idd,setidd]=useState(id);
+  // setidd(id);
+  function check(){
+    // setidd(id)
+    console.log("check",idd);
   }
-  const edit = async()=>{
-    console.log("edit")
-
-    //send _id which comes from mongodb for every note at the time of save note
-    //defalt _id
-    const _id="65983c832dc45687750032f1" 
-    // destructure the value of _id then pass _id
-    const updateField="update"
-    const flage=true  
-    // use useState on the behalf of setTitle or setContent
-
-
-    await axios.post("http://localhost:8000/api/v1/notes/editnote",{_id,updateField,flage})
-    .then(()=>{
-      console.log("data send for update successfully");
+  const handleDelete =async ()=>{
+    setidd(id)
+    console.log("arman",idd);
+   
+    await axios.post("api/v1/notes/deletenote",{idd}
+    )
+    .then((res)=>{
+      console.log("data send for deletion successfully",idd);
+      return res.note; 
+    }).then((note)=>{
+      // console.log("notes",note)
     })
     .catch((error)=>{
-      console.log("Error during calling api of update note");
+      console.log("Error during calling api of delete note",error);
     })
+  }
 
+  const handleEdit = async ()=>{
+   
+    
   }
   return (
     <>
@@ -66,14 +61,14 @@ function Note({title ,content}) {
         <div style={notecss}>
           <div >
             <h2 style={{color:"blue", "fontSize":"30px"}} className="title">{title}</h2>
-            <p className="content">{content}</p>
+            <p className="content">{content} <br/> {idd}</p>
           </div>
         </div>
           <div style={{"display" :"flex","justifyContent": "space-between","minWidth": "300px","cursor":"pointer", "padding":"3px 10px"}}>
-          <button onClick={detete}><img src={deleteimg} alt="delete" /></button>
-          <button onClick={edit}><img src={editimg} alt="update" /></button>
-            
+            <img src={deleteimg} onClick={handleDelete}  alt="delete" />
+            <img src={editimg} onClick={handleEdit} alt="update" />
           </div>
+          <button onClick={check}>check</button>
       </div>
     </>
   );
