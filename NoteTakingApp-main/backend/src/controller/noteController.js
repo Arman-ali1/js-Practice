@@ -2,6 +2,7 @@ import { asyncHandler } from "../utils/ayncHandler.js";
 import Note from "../Models/noteSchema.js";
 
 
+
 const createNote = asyncHandler(async (req,res)=>{
     const {author, title, content} = req.body
         console.log("req",req);

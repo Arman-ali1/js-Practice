@@ -1,0 +1,48 @@
+/* /* App.css */
+
+body {
+  background-color: #010424;
+}
+
+.col-md-6 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  display: block;
+}
+
+.col-md-6 span {
+  color: #fff;
+  font-style: normal;
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 900;
+}
+.col-md-6:nth-child(odd) img {
+ width: 50px;
+ height: 50px;
+ background-color: transparent;
+ margin-top: 20px;
+}
+.col-md-6:nth-child(even) img {
+ width: 45px;
+ height: 45px;
+ background-color: transparent;
+ margin-top: 15px;
+}
+.col-md-6 button {
+  background-color: #701abc;
+  color: #fff;
+  position: absolute;
+  padding: 5px 20px;
+  bottom: 40px;
+  right: 170px;
+  border: none;
+}
+
+.col-md-6 div {
+  margin-bottom: 10px;
+}

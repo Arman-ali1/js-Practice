@@ -6,9 +6,9 @@ import axios from "axios";
 function NoteContainer() {
   const [notes, setNotes] = useState([]);
   
-  const save = ()=>{
+  // const save = ()=>{
 
-  }
+  // }
 
   useEffect( ()=>{
        axios

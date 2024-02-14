@@ -1,0 +1,22 @@
+/* .container-fluid{
+    background-color: black;
+} */
+.bg-color{
+    background-color: 050A24;
+    /* rgba(4, 228, 255, 1) */
+}
+.bg{
+    background-color: linear-gradient(rgba((255, 255, 255, 1)));
+}
+
+
+input[type=text] {
+    width: 100%;
+    background: transparent;
+    /* padding: 12px 20px; */
+    /* margin: -33px 0px 0 39px; */
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+  }
+

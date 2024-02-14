@@ -5,6 +5,7 @@ const InputFormcss = {
   flexDirection: "column",
   width: "fit-content",
   position: "static",
+  
 
   text: {
     fontSize: "0.75rem",
@@ -82,7 +83,7 @@ function InputForm() {
   };
 
   return (
-    <div style={InputFormcss.container}>
+    <div style={InputFormcss.container} >
       <h2>New Note...</h2>
       <div style={InputFormcss}>
         <label for="input" style={InputFormcss.text} class="text">
@@ -116,7 +117,7 @@ function InputForm() {
         <textarea placeholder="Write here..."
         onChange={(e)=>(setContent(e.target.value))}
          style={InputFormcss.textarea} />
-        <button style={InputFormcss.button}
+        <button  style={InputFormcss.button} 
         
          onClick={handleSubmit}>
           Save

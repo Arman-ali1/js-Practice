@@ -1,0 +1,75 @@
+.bg {
+    background-color: #010424;
+    color: #FFF;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    align-items: center;
+}
+
+.px-6{
+    padding: 0 357px;
+}
+.px-8{
+    position: relative;
+    left: -143px;
+}
+
+.font{
+    font-family: Poppins;
+}
+
+.p{
+    font-size: 29px;
+    font-weight: 500;
+}
+
+.img{
+    position: relative;
+    top: -23px;
+    left: -237px;
+
+}
+.img1{
+    position: relative;
+    top: -4px;
+    left: 70px;
+
+}
+
+.star{
+    color: rgb(176, 176, 43);
+    position: relative;
+    top: -31px;
+    left: -92px;
+}
+
+.abc {
+    position: absolute;
+    left: 519px;
+    width: 20px;
+    height: 105px;
+}
+.bcd{
+    position: absolute;
+    left: 970px;
+    width: 20px;
+    height: 105px;
+}
+.cde{
+    position: absolute;
+    left: 1450px;
+    width: 20px;
+    height: 105px;
+}
+.def{
+    position: absolute;
+    left: 710px;
+    width: 20px;
+    height: 105px;
+}
+
+.px-7{
+    padding: 0 0 0 130px ;
+}
+

@@ -1,0 +1,94 @@
+
+  .Page1-container{
+    background-color: #010424;
+    width: 100%;
+    
+}
+
+.header-section h1 span {
+    display: block; /* Or, use white-space: pre-wrap; */
+  }
+
+.Page1-container h1{
+   margin-left: 40px;
+ color: #FFF;
+font-family: Poppins;
+font-size: 32px;
+font-style: normal;
+font-weight: 900;
+line-height: 38px; /* 118.75% */
+text-transform: uppercase;
+}
+
+.Page1-container p{
+    margin-left: 50px ;
+    margin-right: 40px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; /* 145% */
+}
+
+.image {
+    display: flex;
+    justify-items: flex-end;
+    margin: 0 20px 10px 70px;
+    width: 500px; /* Adjust this value as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+ 
+  .questions-section {
+    display: flex;
+    justify-items: flex-end;
+    
+  }
+
+.get-started-button {
+    margin-left: 50px;
+    border-radius: 4px;
+    background: #701ABC;
+    height: 40px;
+    width: 120px;
+    text-decoration: #FFF;
+  }
+
+  .bottom-section {
+    margin-top: 40px; /* Add margin to the top of the bottom section for spacing */
+    text-align: center; /* Center the text horizontally */
+  }
+
+  .bottom-section h1 {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 38px; /* 118.75% */
+    text-transform: uppercase;
+    margin-bottom: 20px; /* Add margin at the bottom of the heading for spacing */
+  }
+  
+  .bottom-section-heading .second-line {
+    display: block;
+  }
+
+  @media screen and (max-width: 768px) {
+    .Page1-container p,
+    .get-started-button {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .questions-section,
+    .get-started-button {
+        justify-content: center;
+    }
+
+    .bottom-section h1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

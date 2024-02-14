@@ -43,13 +43,13 @@ function Header() {
   } 
 
   return (
-    <header className='py-3 shadow bg-gray-500'>
-     <nav>
-        <ul style={buttoncss.list}>
+    <header className='py-3 shadow '>
+     <nav >
+        <ul style={buttoncss.list} >
             {
                 navItems.map((item)=>(
-                    <li key={item}>
-                        <button onClick={AddNote} style={buttoncss.button}>{item.name}</button>
+                    <li key={item} >
+                        <button className='text-blue-800' onClick={AddNote} style={buttoncss.button}>{item.name}</button>
                     </li>
                 ))
             }

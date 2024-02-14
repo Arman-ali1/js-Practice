@@ -2,6 +2,7 @@ Screenshot 2023-11-02 011314.png
 Screenshot 2023-10-30 004745.png
 node_modules
 # Logs
+Tesla-clone
 logs
 *.log
 npm-debug.log*
