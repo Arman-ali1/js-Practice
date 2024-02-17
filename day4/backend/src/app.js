@@ -25,6 +25,9 @@ app.use("/api/v1/product",productRouter);
 import orderRouter from "./routes/productdashRouter/orderRouter.js";
 app.use("/api/v1/orders",orderRouter)
 
+import paymentRouter from "./routes/productdashRouter/paymentRouter.js";
+app.use("/api/v1/payments",paymentRouter);
+
 export const myCache = new NodeCache();
 export default app;
 
