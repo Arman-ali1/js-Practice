@@ -1,0 +1,95 @@
+.a1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vmax;
+    height: 44vmax;
+} 
+
+.a2{
+    width: 100vmax;
+    height: 33vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    /* border-radius: 20px; */
+    /* box-shadow: 5px 5px 10px rgba(238, 10, 10, 0.749); */
+    
+} 
+
+
+.a2left{
+    position: absolute;
+    background: #010424;
+    width: 45vmax;
+    height: 43vmax;
+    /* border-top-left-radius: 10px; Set your desired top-left border radius
+    border-bottom-left-radius: 10px; */
+    /* padding-left: 15vmax; */
+    margin-right: -690px;
+    z-index:3;
+}
+.a2right{
+    /* background: linear-gradient(180deg, #2257BF 0%, #7748E3 100%); */
+    position: absolute;
+    background: #010424;
+    /* width: 55vmax; */
+    height: 33vmax;
+    /* padding-left: -30vmax; */
+    color: aliceblue;
+    font-size: 13px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    border-top-right-radius: 10px; /* Set your desired top-left border radius */
+    border-bottom-right-radius: 10px;
+    padding-right: 20vmax;
+    z-index: 2;
+}
+.a2right h1{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    color:white;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 76.923% */
+    text-transform: uppercase;
+}
+.a2right p{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    text-transform: capitalize; 
+    color: #747474;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 150% */
+}
+ 
+.imageText{
+    position: absolute;
+    /* width: 100vmax; */
+    height: 34vmax;
+    /* text-transform: capitalize;  */
+    font-size: 25px;
+    padding-top: 55px;
+    font-family: Poppins;
+    display: flex;
+    z-index: 4;
+    color:white;
+}
+
+#enquirybutton{
+    border-radius: 10px;
+    background: #701ABC;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+

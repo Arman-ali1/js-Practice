@@ -1,0 +1,90 @@
+/* Page2.css */
+
+.Page4-container {
+  background: rgb(9, 9, 10);
+  background: linear-gradient(
+    180deg,
+    rgba(9, 9, 10, 1) 19%,
+    rgba(55, 50, 122, 1) 55%,
+    rgba(49, 140, 231, 1) 79%
+  );
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px; /* Adjust padding for smaller screens */
+}
+
+.center-content {
+  text-align: center;
+  margin-bottom: 30px; /* Adjust margin for smaller screens */
+}
+
+.center-content h1 {
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 38px;
+  text-transform: uppercase;
+  margin-left: 20px; /* Adjust margin for smaller screens */
+  margin-right: 20px; /* Adjust margin for smaller screens */
+}
+
+.center-content p {
+  color: white;
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  margin-left: 20px; /* Adjust margin for smaller screens */
+  margin-right: 20px; /* Adjust margin for smaller screens */
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically on smaller screens */
+  gap: 20px; /* Add gap between cards on smaller screens */
+}
+
+.card {
+  flex: 1;
+  padding: 20px; /* Adjust padding for smaller screens */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-right: 0; /* Remove margin between cards on smaller screens */
+}
+
+.card h2 {
+  color: black;
+  font-size: 18px;
+}
+
+.card p {
+  color: black;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  .Page4-container {
+    padding: 100px 200px;
+  }
+
+  .center-content h1,
+  .center-content p {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+
+  .card-container {
+    flex-direction: row;
+  }
+
+  .card {
+    margin-right: 40px;
+  }
+}
+

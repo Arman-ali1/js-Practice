@@ -1,0 +1,102 @@
+/* Page3.css */
+/* Page3.css */
+.Page3-container {
+  background-color: #010424;
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-weight: 900;
+  line-height: 49px;
+  font-size: 40px;
+  margin-bottom: 30px; /* Adjust margin for smaller screens */
+  text-transform: uppercase;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  margin-bottom: 30px; /* Adjust margin for smaller screens */
+  margin-left: 20px; /* Adjust margin for smaller screens */
+  margin-right: 20px; /* Adjust margin for smaller screens */
+}
+
+.content-container.reversed {
+  flex-direction: column-reverse; /* Reverse order on smaller screens */
+  margin-bottom: 20px; /* Adjust margin for smaller screens */
+  margin-left: 20px; /* Adjust margin for smaller screens */
+  margin-right: 20px; /* Adjust margin for smaller screens */
+}
+
+.content-container p {
+  font-family: Poppins;
+  font-size: 16px; /* Adjust font size for smaller screens */
+  line-height: 22px; /* Adjust line-height for smaller screens */
+  margin-bottom: 10px; /* Adjust margin for smaller screens */
+}
+
+.text-content,
+.image-content {
+  width: 100%; /* Make both text and image fill the container width */
+}
+
+.text-content {
+  text-align: center; /* Center text on smaller screens */
+}
+
+h2 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px; /* Adjust font size for smaller screens */
+  text-transform: uppercase;
+  margin-top: 10px; /* Add margin at the top of h2 */
+}
+
+img {
+  width: 100%; /* Make the image fill its container width */
+  margin: 20px 0; /* Adjust margin for smaller screens */
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+  .Page3-container {
+      width: 100%; /* Make the container full width for larger screens */
+  }
+
+  h1 {
+      font-size: 48px; /* Adjust font size for larger screens */
+      margin-bottom: 40px; /* Adjust margin for larger screens */
+  }
+
+  .content-container {
+      flex-direction: row; /* Align items horizontally for larger screens */
+      justify-content: space-between;
+      margin-bottom: 40px; /* Adjust margin for larger screens */
+      margin-left: 120px; /* Adjust margin for larger screens */
+      margin-right: 120px; /* Adjust margin for larger screens */
+  }
+
+  .content-container.reversed {
+      flex-direction: row-reverse; /* Reverse order on larger screens */
+      margin-bottom: 40px; /* Adjust margin for larger screens */
+      margin-left: 120px; /* Adjust margin for larger screens */
+      margin-right: 120px; /* Adjust margin for larger screens */
+  }
+
+  .content-container p {
+      font-size: 17px; /* Adjust font size for larger screens */
+      line-height: 24px; /* Adjust line-height for larger screens */
+  }
+
+  h2 {
+      font-size: 20px; /* Adjust font size for larger screens */
+      margin-top: 20px; /* Add margin at the top of h2 for larger screens */
+  }
+
+  img {
+      width: 300px; /* Keep the original width for larger screens */
+      margin: 0px 120px 20px 0px;
+  }
+}

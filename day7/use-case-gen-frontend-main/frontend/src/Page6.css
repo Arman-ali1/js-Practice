@@ -1,0 +1,92 @@
+
+/* Default styles for larger screens */
+.page6-container {
+  background-color: #010424;
+  text-align: center;
+  padding:  30px;
+}
+
+.center-heading,
+.page6-container h1,
+.page6-container h2,
+.page6-container h3 {
+  color: white;
+  font-family: Poppins;
+  font-style: normal;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+.center-heading{
+  font-size: 16px;
+}
+
+.page6-container h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.page6-container h2 {
+  font-size: 16px;
+  margin-top: 0px;
+}
+
+.page6-container h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.icons-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 120px;
+}
+
+.icon {
+  width: 100px;
+  text-align: center;
+  color: #fff;
+}
+
+.images-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: -5px;
+}
+
+.image-container {
+  flex: 0 0 calc(40% - 10px);
+  position: relative;
+  text-align: center;
+  margin: 0 5px 0px;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .page6-container,
+  .center-heading,
+  .page6-container h1,
+  .page6-container h2,
+  .page6-container h3 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .icons-section {
+    margin: 20px;
+  }
+
+  .image-container {
+    flex: 0 0 calc(100% - 10px);
+    margin: 0 5px 20px;
+  }
+}
+
+

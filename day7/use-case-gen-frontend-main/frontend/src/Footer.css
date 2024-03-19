@@ -1,0 +1,42 @@
+/* Footer.css */
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #4f1098;
+    color: white;
+  }
+  
+  .footer-section {
+    flex: 0 1 200px; /* Adjust the width as needed */
+    text-align: center;
+    margin-bottom: 20px; /* Add margin between sections */
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-bottom: 10px; /* Add margin between icon and heading */
+  }
+  .icon img{
+width: 70px;
+margin-left: 60px;
+margin-bottom: -10px;
+  }
+
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px; /* Add margin between heading and paragraph */
+  }
+  
+  p {
+    color: white;
+    font-family: Poppins ;
+    font-size: 14px;
+    font-style: normal; 
+    font-weight: 600;
+    line-height: 18px;
+  }
+  
+  

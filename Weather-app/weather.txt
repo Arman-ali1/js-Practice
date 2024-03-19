@@ -1,0 +1,1 @@
+httpsapi.openweathermap.orgdata2.5forecastq=Kanpur&appid=fd53770d905326cd3a9785cba8c58cb2

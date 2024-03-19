@@ -1,0 +1,41 @@
+.Header {
+    background-color: #010424;
+    color: #fff;
+    text-align: center;
+    padding: 80px 100px;
+}
+
+.Header h1{
+    font-family: Poppins;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 38px;
+    margin-bottom: 10px; /* 118.75% */
+    text-transform: uppercase; /* Set your desired font size */
+  }
+
+.Header p{
+    color: white; /* Set your desired text color */
+    font-size: 18px;
+    font-family: Poppins;
+    font-style: normal;
+    margin-top: 10px;
+    margin-bottom: 0px;
+   
+}
+@media screen and (min-width: 768px) {
+    .Header {
+        padding: 80px 100px;
+    }
+
+    .Header h1 {
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+
+    .Header p {
+        margin-left: 180px;
+        margin-right: 180px;
+    }
+}

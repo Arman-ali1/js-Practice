@@ -1,0 +1,121 @@
+
+.enq{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vmax;
+    height: 68vmax;
+    background: #010424;
+}
+
+.enquiry{
+    width: 82vmax;
+    height: 42vmax;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 20px;
+    margin-left: 100px; */
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(238, 10, 10, 0.749);
+    /* background-color: blue; */
+}
+
+
+.enquiryleft{
+    background: linear-gradient(180deg, #7748E3 0%, #2257BF 100%);
+    width: 40vmax;
+    height: 40vmax;
+    border-top-left-radius: 10px; /* Set your desired top-left border radius */
+  border-bottom-left-radius: 10px;
+}
+.enquiryright{
+    /* background: linear-gradient(180deg, #2257BF 0%, #7748E3 100%); */
+    background: rgba(243, 248, 249, 1);
+    width: 40vmax;
+    height: 40vmax;
+    border-top-right-radius: 10px; /* Set your desired top-left border radius */
+    border-bottom-right-radius: 10px;
+    
+}
+.enquiryright h1{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 26px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 76.923% */
+    text-transform: uppercase;
+}
+.enquiryright p{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 16px;
+    text-transform: capitalize; 
+    color: #747474;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 150% */
+}
+.enquiryinput{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 30vmax;
+    height: 1.5vmax;
+    border-radius: 10px;
+    border: 1px solid #E5E5E5;
+    background: rgba(243, 248, 249, 1);
+    font-size: 16px;
+    text-transform: capitalize; 
+    color: #747474;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 150% */
+}
+#enquirybutton{
+    border-radius: 10px;
+    background: #701ABC;
+    height: 45px;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    margin-left: -200px;
+}
+#contact{
+    padding-top: 10px;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 57.6px; /* 144% */
+    text-transform: uppercase;
+}
+#contact p{
+    padding-left: 80px;
+    padding-right: 80px;
+    color: #c2bdbd;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 29px; /* 138.095% */
+}
+#enqbtn{
+    width: 27%;
+    height: 50px;
+    background: #701ABC;
+    color:white;
+    margin-left: -28%;
+    border-radius: 10px;
+    margin-top: 8%;
+   font-size: 20px;
+}

@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import './App.css'
 import Image from './assets/arrow-left.png'
+// import TradingViewWidget from './TradingViewWidget'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,7 +25,7 @@ function App() {
           <button className='bg-blue-500 text-white p-3 rounded-lg shadow-2xl w-72  '>Submit</button>
         </div>
       </div>
-      
+      {/* <TradingViewWidget/> */}
     </>
   )
 }
